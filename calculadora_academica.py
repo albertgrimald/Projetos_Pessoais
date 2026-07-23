@@ -8,11 +8,6 @@ def pausar():
 def limpar_tela():
     os.system('cls')
 
-def calcular_media(max,qnt,notas):
-    media = (max * qnt) / notas
-    return media
-
-
 
 print('==============================================================================')
 print('Bem vindo a Calculadora Acadêmica!')
@@ -22,21 +17,23 @@ print('=========================================================================
 while True:
     limpar_tela()
     print('====== CALCULADORA ACADÊMICA ========')
-    print('[1] - CALCULAR MINHA MÉDIA           ')
+    print('[1] - CALCULAR MINHA MÉDIA TOTAL     ')
     print('[2] - QUANTO PRECISO P/ APROVAÇÃO?   ')
     print('=====================================\n')
     op = int(input('> '))
     if op == 1:
         Notas_totais = []
-        nota_max = 0
         print('==== CALCULAR MINHA MÉDIA ====')
-        nota_max = int(input('NOTA MÁXIMA DA UNIDADE: '))
-        quant_aval = int(input('QNTD DE AVALIAÇÕES FEITAS: '))
-        for i in range(quant_aval):
-            notas = float(input(f'NOTA {i +1}: '))
+        qntd_avaliaçoes = int(input('QUANTIDADE DE AVALIAÇÕES ATÉ O MOMENTO: '))
+        for i in range(qntd_avaliaçoes):
+            notas = float(input(f'NOTA AVALIAÇÃO {i +1}: '))
             Notas_totais.append(notas)
-        calcular_media(nota_max,quant_aval, sum(Notas_totais))
-        print(calcular_media(nota_max,quant_aval, sum(Notas_totais)))
+        total_notas = sum(Notas_totais) / qntd_avaliaçoes
+        maior_nota = max(Notas_totais)
+        print(f'SUA MÉDIA ATUALMENTE É DE {total_notas} PONTOS!')
+        print(f'SUA MAIOR NOTA FOI DE: {maior_nota}')
+
+
 
         pausar()
     elif op == 2:
