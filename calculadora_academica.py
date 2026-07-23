@@ -1,5 +1,7 @@
 import os
 
+# AINDA EM DESENVOLVIMENTO
+
 def pausar():
     input('TECLE [ENTER] PARA CONTINUAR...')
 
