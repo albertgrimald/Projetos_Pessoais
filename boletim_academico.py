@@ -9,7 +9,7 @@ Materias = ['Lógica da Programação', 'Introdução a Computação', 'Introdu�
 # Número baseado na index das materias ////  Notas separadas por unidade dentro da lista
 Notas_0 = [10]
 Notas_1 = [9.2]
-Notas_2 = [10]
+Notas_2 = [10,10]
 Notas_3 = [7.4, 9]
 Notas_4 = [7]
 
