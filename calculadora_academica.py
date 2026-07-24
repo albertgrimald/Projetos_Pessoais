@@ -30,14 +30,23 @@ while True:
             Notas_totais.append(notas)
         total_notas = sum(Notas_totais) / qntd_avaliaçoes
         maior_nota = max(Notas_totais)
+        print('\n====================================================')
         print(f'SUA MÉDIA ATUALMENTE É DE {total_notas} PONTOS!')
         print(f'SUA MAIOR NOTA FOI DE: {maior_nota}')
-
-
-
+        print('====================================================')
         pausar()
+
     elif op == 2:
+        Notas_totais = []
         print('==== QUANTO PRECISO P/ APROVAÇÃO? ====')
+        quant_unid = input('QUANTIDADES DE UNIDADES: ')
+        media_aprov = input('MÉDIA PARA APROVAÇÃO: ')
+        max_unid = quant_unid * 10
+        qntd_avaliaçoes = int(input('QUANTIDADE DE AVALIAÇÕES ATÉ O MOMENTO: '))
+        for i in range(qntd_avaliaçoes):
+            notas = float(input(f'NOTA AVALIAÇÃO {i +1}: '))
+            Notas_totais.append(notas)
+        total_notas = sum(Notas_totais) 
         pausar()
     else:
         print('OPÇÃO INVÁLIDA! DIGITE UMA OPÇÃO VÁLIDA! ')
