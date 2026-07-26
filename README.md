@@ -5,14 +5,6 @@
 
 > Espaço dedicado a projetos autorais e experimentações práticas. Aqui armazeno ferramentas utilitárias, protótipos e automações construídas para otimizar fluxos e resolver problemas reais do dia a dia.
 
----
-
-## 🧰 Ferramentas e Scripts Atuais
-
-*   [**`boletim_academico.py`**](./boletim_academico.py)
-    *   *Sistema simples de gestão acadêmica utilizando listas e laços de repetição para calcular médias e aprovações.*
-*   [**`calculadora_academica.py`**](./calculadora_academica.py)
-    *   *Utilitário focado no processamento de notas e exibição de resultados dinâmicos.*
 
 ---
 
